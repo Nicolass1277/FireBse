@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Ingreso de Mascotas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de entrada: Código del Chip -->
+        <EditText
+            android:id="@+id/etCodigoChip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el Código de Chip"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de entrada: Nombre de la Mascota -->
+        <EditText
+            android:id="@+id/etNombreMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el Nombre de la Mascota"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Selección: Tipo de Mascota -->
+        <Spinner
+            android:id="@+id/spTipoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Campo de entrada: Nombre del Dueño -->
+        <EditText
+            android:id="@+id/etNombreDueno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el Nombre del Dueño"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de entrada: Dirección del Dueño -->
+        <EditText
+            android:id="@+id/etDireccionDueno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la Dirección del Dueño"
+            android:inputType="textPostalAddress"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para enviar datos a Firebase -->
+        <Button
+            android:id="@+id/btnEnviarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR DATOS"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para cargar datos desde Firebase -->
+        <Button
+            android:id="@+id/btnCargarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CARGAR DATOS"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
